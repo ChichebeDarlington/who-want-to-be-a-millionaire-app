@@ -1,29 +1,27 @@
-export  const reducer = (state, action)=>{
-switch (action.type) {
-    case "INITIAL_QUESTION":
-        return {...state, questions:action.payload}
-        break;
-    case "SELECTED_ANSWER":
-        return {...state, selectedAnswer: action.payload}
+export const reducer = (state, action) => {
+  switch (action.type) {
+    // case "INITIAL_QUESTION":
+    //   return { ...state, questions: action.payload };
 
-        break;
-    case "CLASS_SELECTOR":
-        // console.log(action.payload)
-        return {...state, classSelector: action.payload}
-        break;
-        case "CHECK_ANSWER":
-            // console.log(action.payload)
-            setTimeout(()=>{
-                if(action.payload.answer.correct){
-                console.log("correct")
-                 return {...state, classSelector: action.payload.correct}
-                } else{
-                console.log("wrong")
-                 return {...state, classSelector: action.payload.wrong}
-                }
-            },3000)
-           
+    // case "SELECTED_ANSWER":
+    //   return { ...state, selectedAnswer: action.payload };
+
+    // case "CLASS_SELECTOR":
+    //   // console.log(action.payload)
+    //   return { ...state, classSelector: action.payload };
+
+    // case "CHECK_ANSWER":
+    //   if (action.payload.correct) {
+    //     return {
+    //       ...state,
+    //       qNum: +1,
+    //       classSelector: "answer correct",
+    //     };
+    //   } else {
+    //     return { ...state, classSelector: "answer wrong" };
+    //   }
+
     default:
-        return state
-}
-}
+      return state;
+  }
+};

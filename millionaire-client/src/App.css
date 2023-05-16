@@ -1,7 +1,15 @@
-.App{
-    background-color: #020230;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
+.App {
+  background-color: #020230;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.earned {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }

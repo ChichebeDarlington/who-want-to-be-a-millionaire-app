@@ -1,20 +1,21 @@
-import Questions from '../questions/Questions'
-import './Main.css'
+import Questions from "../questions/Questions";
+import Timer from "../Timer";
+import "./Main.css";
 
 const Main = () => {
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <div className="top">
         <div className="timer">
-          30
+          <Timer />
         </div>
       </div>
-      <hr/>
+      <hr />
       <div className="bottom">
-        <Questions/>
+        <Questions />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

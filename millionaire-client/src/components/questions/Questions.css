@@ -1,65 +1,78 @@
-.questionsanswers{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.questionsanswers {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-.question{
-    width: 85%;
-    background: linear-gradient(#100241, #000);
-    border: 1px solid whitesmoke;
-    border-radius: 9px;
-    padding: .5rem;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 700;
+.question {
+  width: 85%;
+  background: linear-gradient(#100241, #000);
+  border: 1px solid whitesmoke;
+  border-radius: 9px;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
 }
-.answers{
-    width: 100%;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.answers {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.answer{
-    list-style: none;
-    margin: 3px;
-    width: 40%;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    background: linear-gradient(#0e0124, #22074d);
-    cursor: pointer;
+.answer {
+  list-style: none;
+  margin: 3px;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background: linear-gradient(#0e0124, #22074d);
+  cursor: pointer;
 }
-.answer:hover, .answer.active{
-    background: mediumblue;
+.answer:hover,
+.answer.active {
+  background: mediumblue;
 }
-.answer.correct{
-    animation: correct 3s ease forwards ;
+.answer.correct {
+  animation: correct 3s ease forwards;
 }
-.answer.wrong{
-    animation: wrong 3s 0.7s ease-in-out alternate both;
+
+.answer.wrong {
+  animation: wrong 3s 0.7s ease-in-out alternate both;
 }
 @keyframes correct {
-    0%,22%,42%{
-        background: mediumblue;
-    }
-    20%,40%,60%{
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
     background: linear-gradient(#0e0124, #22074d);
-    }
-    60%,100%{
-        background: green;
-    }
+  }
+  60%,
+  100% {
+    background: green;
+  }
 }
 @keyframes wrong {
-    0%,22%,42%{
-        background: mediumblue;
-    }
-    20%,40%,60%{
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
     background: linear-gradient(#0e0124, #22074d);
-    }
-    60%,100%{
-        background: crimson;
-    }
+  }
+  60%,
+  100% {
+    background: crimson;
+  }
 }
